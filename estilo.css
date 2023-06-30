@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
 }
 
 header {
@@ -58,11 +59,6 @@ nav ul li a:hover {
   color: #fff;
 }
  
-.banner h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-}
-
 .banner p {
   font-size: 18px;
   margin-bottom: 20px;
@@ -87,11 +83,33 @@ nav ul li a:hover {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px; /* Adicionando margem inferior */
 }
 
+
 section h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 24px; /* Tamanho da fonte */
+  color: #ffcc00; /* Cor do texto */
+  margin-bottom: 10px; /* Margem inferior */
+  text-align: center;
+  font-family: "Playbill";
+}
+
+section h1 {
+  font-size: 30px; /* Tamanho da fonte */
+  color: #ffcc00; /* Cor do texto */
+  margin-bottom: 10px; /* Margem inferior */
+  text-align: center;
+  font-family: "Playbill";
+}
+
+.banner h1 {
+  font-size: 100px; /* Tamanho da fonte */
+  color: #ffcc00; /* Cor do texto */
+  margin-bottom: 10px; /* Margem inferior */
+  text-align: center;
+  font-family: "Playbill";
 }
 
 section p {
@@ -105,6 +123,98 @@ footer {
   color: #fff;
   text-align: center;
   font-size: 14px;
+}
+
+#cardapio h1{
+  color: #ffcc00;
+  text-align: center;
+}
+
+#cardapio p{
+  text-align: center;
+}
+
+#cardapio {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgb(233, 233, 233);
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px;
+  text-align: center;
+  table-layout: fixed;
+}
+
+table td,
+table th {
+  border: 1px solid rgb(233, 233, 233);
+  background-color: rgb(245, 245, 245);
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+table thead th:first-child {
+  border-top-left-radius: 10px;
+}
+
+table thead th:last-child {
+  border-top-right-radius: 10px;
+}
+
+caption {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 240;
+  height: 160;
+  margin-bottom: 10px;
+}
+
+.description {
+  min-height: 160px;
+}
+
+.menu-item {
+  max-width: 150px; /* Define a largura máxima do item do menu */
+  margin: 0 auto; /* Centraliza horizontalmente os itens */
+  margin-bottom: 20px; /* Define a margem inferior para separar os itens */
+}
+
+.menu-item p {
+  margin: 0 auto; /* Centraliza horizontalmente os itens */
+  margin-bottom: auto; /* Define a margem inferior para separar os parágrafos */
+}
+
+.menu-item a:hover {
+  color: #ffcc00;
+}
+
+.menu-item a {
+  color: #000;
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-weight: bold;
+}
+
+#sobre {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgb(233, 233, 233);
 }
 
 #sobre h2 {
@@ -124,7 +234,8 @@ footer {
   color: #ffcc00; /* Cor do texto */
 }
 
-#cardapio h1{
-  color: #cfa200;
-  text-align: center;
+#sobre a {
+  color: #000; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-weight: bold;
 }
