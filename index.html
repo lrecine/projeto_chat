@@ -3,78 +3,134 @@
 <html>
  <head>
    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="script.js"></script>
    <title>Iron Door Saloon</title>
    <link rel="stylesheet" type="text/css" href="estilo.css">
  </head>
  <body>
-   <header>
-     <h1><a href="index.html">Iron Door Saloon</a></h1>
-     <nav>
-       <ul>
-         <li><a href="index.html" class="active">Início</a></li>
-         <li><a href="historia.html">História</a></li>
-         <li><a href="avaliacao.html">Avaliação</a></li>
-         <li><a href="entretenimento.html">Entretenimento</a></li>
-       </ul>
-     </nav>
-   </header>
-   
-   <section class="banner">
-     <h2>Bem-vindo!</h2>
-     <p>Entre, tome um drink e conheça a história fascinante desse lendário saloon do Velho Oeste.</p>
-     <a href="#cardapio" class="btn">Cardápio</a>
-   </section>
+  <header>
+    <h1><a href="index.html">Iron Door Saloon</a></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Início</a></li>
+        <li><a href="historia.html">História</a></li>
+        <li><a href="avaliacao.html">Avaliação</a></li>
+        <li><a href="entretenimento.html">Entretenimento</a></li>
+      </ul>
+    </nav>
+  </header>
 
-   <section id="sobre">
-     <h2>Sobre o Iron Door Saloon</h2>
-     <p>O Iron Door Saloon é um icônico estabelecimento que representa a cultura e o estilo de vida do Velho Oeste. Aqui você encontrará informações sobre a história do saloon, os funcionários famosos que o frequentavam e muito mais.</p>
-     <p>O Iron Door Saloon é um dos saloons mais antigos e famosos do Velho Oeste. Fundado em 1852, na cidade de Groveland, Califórnia, rapidamente se tornou um ponto de encontro para cowboys, mineiros e viajantes em busca de diversão e entretenimento.</p>
-     <p><a href="https://www.irondoorsaloon.com/shop">Visite nossa loja</a></p>
-   </section>
+    <div>
+      <div class="banner">
+            <h1>Bem-vindo!</h1>
+            <p class="opacity-75">Entre, tome um drink e conheça a história fascinante desse lendário saloon do Velho Oeste.</p>
+            <p><a class="btn" href="#cardapio">Cardápio</a></p>
+      </div>
+    </div>
+
 
    <section id="cardapio" class="container">
-     <h1>Cardápio do Iron Door Saloon</h1>
+    <h1>Cardápio do Iron Door Saloon</h1>
       <p>É claro, que como o saloon é na California, que o menu será em dollar, aqui estão alguns do vasto cardápio deles:</p>
-      <h2>Menu - Breakfast</h2>
-        <h3>2 Egg Breakfast</h3>
+    <table>
+      <caption><h2>Menu - Breakfast</h2></caption>
+      <tr>
+        <td>
+          <h3>2 Egg Breakfast</h3>
           <p>2 Eggs served with your choice of bacon or sausage and your choice of hashbrowns, homefries or fruit and served with choice of wheat, white, or sourdough toast.</p>
           <p>$12.95</p>
-        <h3>Breakfast Burrito</h3>
+          <img src="imagens/ovos-fritos.jpg" alt="Imagem dos Ovos Fritos" width="240" height="160" />
+        </td>
+        <td>
+          <h3>Breakfast Burrito</h3>
           <p>Giant breakfast burrito stuffed with scrambled eggs, hashbrowns, cheddar cheese, sausage and bacon. Served with a side of salsa and sour cream.</p>
           <p>$15.50</p>
-        <h3>Black Bart Breakfast</h3>
+          <img src="imagens/burrito.jpg" alt="Imagem do Breakfast Burrito" width="240" height="160" />
+        </td>
+        <td>
+          <h3>Black Bart Breakfast</h3>
           <p>2 Pancakes, 2 Eggs any style with bacon and sausage, and your choice of hashbrowns or homefries and choice of toast.</p>
           <p>$17.95</p>
-      <h2>Menu - Appetizers</h2>
-        <h3>Mozzerella Sticks</h3>
-          <p>Crispy fried mozzarella sticks (6) served with marinara sauce.</p>
+          <img src="imagens/black_bart.jpg" alt="Imagem do Black Bart Breakfast" width="240" height="160" />
+        </td>
+      </tr>
+    </table>
+  
+    <table>
+      <caption><h2>Menu - Appetizers</h2></caption>
+      <tr>
+        <td>
+          <h3>Mozzerella Sticks</h3>
+          <p>Crispy fried mozzarella sticks (6) served with marinara sauce, one of the best seller. </p>
           <p>$9.50</p>
-        <h3>Sweet Potato Fries</h3>
+          <img src="imagens/mussarela_frita.jpg" alt="Imagem do Mozzerella Sticks" width="240" height="160" />
+        </td>
+        <td>
+          <h3>Sweet Potato Fries</h3>
           <p>Crispy sweet potato fries tossed with cumin and fry salt and served with ranch dressing.</p>
           <p>$8.95</p>
-        <h3>Jalapeno Poppers</h3>
+          <img src="imagens/fritas_fofas.jpg" alt="Imagem do Sweet Potato Fries" width="240" height="160" />
+        </td>
+        <td>
+          <h3>Jalapeno Poppers</h3>
           <p>Jalapeno poppers (6) stuffed with cream cheese, battered and fried and served with a side of ranch dressing.</p>
           <p>$12.75</p>
-      <h2>Menu - Dinner</h2>
-        <h3>French fries</h3>
-          <p>Battered crispy French fries, seasoned with our fry salt.</p>
+          <img src="imagens/jalapeno_fritos.jpg" alt="Imagem do Jalapeno Poppers" width="240" height="160" />
+        </td>
+      </tr>
+    </table>
+    
+    <table>
+      <caption><h2>Menu - Dinner</h2></caption>
+      <tr>
+        <td>
+          <h3>French fries</h3>
+          <p>Battered crispy French fries, seasoned with our fry salt with ketchup, this combination is delicious.</p>
           <p>$8</p>
-        <h3>Buffalo wings</h3>
+          <img src="imagens/fritas_ketchup.jpg" alt="Imagem das Fritas com Ketchup" width="240" height="160" />
+        </td>
+        <td>
+          <h3>Buffalo wings</h3>
           <p>One dozen fried chicken wings covered in Frank's Red Hot sauce and served with your choice of ranch or bleu cheese dressing.</p>
           <p>$19.95</p>
-        <h3>Garlic Fries</h3>
+          <img src="imagens/buffalo_wings.jpg" alt="Imagem da Buffalo Wings" width="240" height="160" />
+        </td>
+        <td>
+          <h3>Garlic Fries</h3>
           <p>Crispy battered french fries tossed with garlic butter and parmesan cheese. Add ranch $1</p>
           <p>$11.95</p>
-   </section>
+          <img src="imagens/fritas_temperadas.jpg" alt="Imagem do Garlic Fries" width="240" height="160">
+        </td>
+      </tr>
+    </table>
+    <h2>Caso tenha interesse em visitar o cardápio deles: </h2>
+    <table id="menu" class="menu-item">
+      <tr>
+        <caption></caption>
+          <td>
+            <p><a href="https://www.irondoorsaloon.com/menus">Menu</a></p>
+          </td>
+      </tr>
+    </table>
+  </section>
 
-   <section id="sobre">
-     <h2>Caso tenha interesse em visitar o cardápio deles: </h2>
-     <p><a href="https://www.irondoorsaloon.com/menus">Menu</a></p>
-   </section>
+  <section id="sobre" class="container">
+    <table>
+      <tr>
+        <h2>Sobre o Iron Door Saloon</h2>
+          <td>
+            <p>O Iron Door Saloon é um icônico estabelecimento que representa a cultura e o estilo de vida do Velho Oeste. Aqui você encontrará informações sobre a história do saloon, os funcionários famosos que o frequentavam e muito mais.</p>
+            <p>O Iron Door Saloon é um dos saloons mais antigos e famosos do Velho Oeste. Fundado em 1852, na cidade de Groveland, Califórnia, rapidamente se tornou um ponto de encontro para cowboys, mineiros e viajantes em busca de diversão e entretenimento.</p>
+            <p><a href="https://www.irondoorsaloon.com/shop">Visite a loja</a></p>
+          </td>
+      </tr>
+    </table>
+  </section>
 
    <footer>
      <p>&copy; 2023 Iron Door Saloon. Todos os direitos reservados.</p>
    </footer>
-   <script src="script.js"></script>
+
  </body>
 </html>
