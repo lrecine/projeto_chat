@@ -1,3 +1,35 @@
+/* Add a media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  header {
+    margin-top: 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  table {
+    border-spacing: 5px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,64 +38,45 @@ body {
 }
 
 header {
-  background-color: #000;
-  padding: 10px;
-}
-
-header h1 {
-  margin: 0;
-  padding: 0;
-}
-
-header h1 a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 28px;
-}
-header h1 a:hover{
-  color: #ffcc00;
+  margin-top: -50px;
+  background-color: #fff;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
+  list-style-type: none;
 }
 
-nav ul li {
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links li {
   margin-right: 20px;
 }
 
-nav ul li a {
-  color: #fff;
+.nav-links li a {
+  color: #000;
   text-decoration: none;
   transition: color 0.3s;
-  font-size: 18px;
+  font-family: sans-serif;
+  font-size: 24px;
+  padding-left: 30px;
 }
 
-nav ul li a.active {
+.nav-links li p {
+  display: block;
+  margin-top: 50px;
+}
+
+.nav-links li a.active {
   color: #cfa200;
 }
 
-nav ul li a:hover {
+.nav-links li a:hover {
   color: #ffcc00;
 }
-
-.banner {
-  background-image: url(imagens/banner.jpg);
-  background-size: cover;
-  background-position: center;
-  padding: 200px 0;
-  text-align: center;
-  color: #fff;
-}
  
-.banner p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
 .btn {
   display: inline-block;
   background-color: #ffcc00;
@@ -85,15 +98,48 @@ nav ul li a:hover {
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px; /* Adicionando margem inferior */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgb(233, 233, 233);
 }
 
+.container h1 {
+  color: #ffcc00;
+  text-align: center;
+}
+
+.container p,
+.container h3 {
+  text-align: center;
+}
+
+/*.container h2 {
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgb(233, 233, 233);
+}*/
+
+.container h2 a{
+  color: #000;
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.container h2 a:hover {
+  color: #ffbb00;
+}
+
+@font-face {
+  font-family: 'Rio Grande';
+  src: url('fonts/RioGrande.ttf') format('truetype');
+}
 
 section h2 {
-  font-size: 24px; /* Tamanho da fonte */
-  color: #ffcc00; /* Cor do texto */
-  margin-bottom: 10px; /* Margem inferior */
+  font-size: 24px;
+  color: #ffcc00;
+  margin-bottom: 10px;
   text-align: center;
-  font-family: "Playbill";
+/*font-family: "Rio Grande", "Bleeding Cowboys", sans-serif;*/
 }
 
 section h1 {
@@ -101,44 +147,7 @@ section h1 {
   color: #ffcc00; /* Cor do texto */
   margin-bottom: 10px; /* Margem inferior */
   text-align: center;
-  font-family: "Playbill";
-}
-
-.banner h1 {
-  font-size: 100px; /* Tamanho da fonte */
-  color: #ffcc00; /* Cor do texto */
-  margin-bottom: 10px; /* Margem inferior */
-  text-align: center;
-  font-family: "Playbill";
-}
-
-section p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-footer {
-  background-color: #000;
-  padding: 10px;
-  color: #fff;
-  text-align: center;
-  font-size: 14px;
-}
-
-#cardapio h1{
-  color: #ffcc00;
-  text-align: center;
-}
-
-#cardapio p{
-  text-align: center;
-}
-
-#cardapio {
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgb(233, 233, 233);
+  /*font-family: "Rio Grande", "Bleeding Cowboys", sans-serif;*/
 }
 
 table {
@@ -149,15 +158,19 @@ table {
   table-layout: fixed;
 }
 
-table td,
-table th {
+table td {
   border: 1px solid rgb(233, 233, 233);
   background-color: rgb(245, 245, 245);
   padding: 10px;
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: auto;
 }
 
+table td p {
+  margin: 10px;
+  text-indent: 2em;
+}
 
 table thead th:first-child {
   border-top-left-radius: 10px;
@@ -173,16 +186,20 @@ caption {
   margin-bottom: 10px;
 }
 
-h3 {
-  margin-top: 0;
-}
+/*h3 {
+  margin: 0 auto;  Centraliza horizontalmente os itens 
+  margin-bottom: auto; Define a margem inferior para separar os parágrafos 
+  margin-top: 5px;
+  text-align: center;
+  color: #ffbb00;
+} */
 
 img {
   display: block;
   margin: 0 auto;
-  max-width: 240;
-  height: 160;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
 }
 
 .description {
@@ -198,16 +215,22 @@ img {
 .menu-item p {
   margin: 0 auto; /* Centraliza horizontalmente os itens */
   margin-bottom: auto; /* Define a margem inferior para separar os parágrafos */
+  margin-top: auto;
 }
 
-.menu-item a:hover {
+.menu-link a:hover {
   color: #ffcc00;
 }
 
-.menu-item a {
+.menu-link a {
   color: #000;
   text-decoration: none; /* Remove o sublinhado dos links */
   font-weight: bold;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid rgb(216, 216, 216);
+  background-color: rgb(224, 224, 224);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 #sobre {
@@ -224,18 +247,63 @@ img {
   text-align: center;
 }
 
-#sobre p {
+#sobre,
+#avaliacao {
   text-align: center;
   font-size: 16px; /* Tamanho da fonte */
   color: #000; /* Cor do texto */
 }
 
-#sobre a:hover {
-  color: #ffcc00; /* Cor do texto */
+#sobre a:hover,
+#avaliacao a:hover {
+  color: rgb(0, 47, 91); /* Cor do texto */
 }
 
-#sobre a {
+#sobre a,
+#avaliacao a {
   color: #000; /* Cor do texto */
   text-decoration: none; /* Remove o sublinhado dos links */
+  font-size: 23px;
   font-weight: bold;
+  padding: 6px;
+  margin: 0 auto; /* Centraliza horizontalmente os itens */
+  border-radius: 8px;
+  border: 1px solid rgb(248, 198, 9);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 4px rgba(159, 127, 2);
+  font-family: "Rio Grande", "Bleeding Cowboys", sans-serif;
+}
+
+#avaliacao p {
+  text-align: left;
+}
+
+#image-right  {
+  float: right;
+  margin: 10px;
+}
+
+#image-left {
+  float: left;
+  margin: 10px;
+}
+
+#historia li {
+  list-style-type: none;
+}
+
+#historia h4{
+  text-align: center;
+}
+
+#historia p {
+  text-align: left;
+}
+
+footer {
+  background-color: #000;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
 }
