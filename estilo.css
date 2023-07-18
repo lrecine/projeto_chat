@@ -55,6 +55,10 @@ nav ul {
   margin-right: 20px;
 }
 
+.nav-links li img {
+  margin-top: 35px;
+}
+
 .nav-links li a {
   color: #000;
   text-decoration: none;
@@ -194,11 +198,34 @@ caption {
   color: #ffbb00;
 } */
 
-img {
+.td-imagem {
+  vertical-align: top;
+  padding: 10px; /* opcional: adicione padding para espaçar o conteúdo */
+  position: relative; /* Adicione uma posição relativa para que o posicionamento absoluto funcione */
+}
+
+.td-imagem img {
   display: block;
+  margin-bottom: 10px; /* adicione um espaçamento inferior entre as imagens */
+}
+
+.td-imagem .texto {
+  margin-top: 10px; /* ajuste o valor conforme necessário para a separação vertical */
+  margin-bottom: 40px;
+}
+
+.td-imagem .texto h4 {
+  position: absolute; /* Altere para posicionamento absoluto */
+  padding: 0;
+  bottom: 0; /* Alinhe o elemento na parte inferior da div pai */
+  left: 0;
+  right: 0;
+}
+
+img {
+  position: relative;
   margin: 0 auto;
-  margin-bottom: 5px;
-  margin-top: 5px;
+  margin-top: 0;
   border-radius: 5px;
 }
 
@@ -298,6 +325,10 @@ img {
 
 #historia p {
   text-align: left;
+}
+
+#historia tr td h3 {
+  margin-top: -1px;
 }
 
 footer {
